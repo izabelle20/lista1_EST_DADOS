@@ -1,5 +1,5 @@
-/*Quest„o 8 - Crie uma struct chamada "Produto" com campos para nome, preÁo e quantidade em estoque. Escreva um 
-programa que permita ao usu·rio comprar produtos, atualizando o estoque e calculando o total da compra. */
+/*Quest√£o 8 - Crie uma struct chamada "Produto" com campos para nome, pre√ßo e quantidade em estoque. Escreva um 
+programa que permita ao usu√°rio comprar produtos, atualizando o estoque e calculando o total da compra. */
 
 #include <stdio.h>
 #include <string.h>
@@ -38,6 +38,14 @@ void comprarProduto(Produto produtos[], int numProdutos, const char *nome, int q
 
 int main()
 {
+	printf("-------------------------------------------------------\n");
+	printf("Universidade Catolica de Brasilia\n");
+	printf("Aluna: Izabelle Ferreira da silva\n");
+	printf("Turma: GPE02M0411 - Esrrutura de dados");
+	printf("\n-----------------------------------------------------\n");
+	printf("Bem-vindos ao sistema integrado ao estoque de produtos!\n");
+	printf("-------------------------------------------------------\n");
+	
     Produto produtos[MAX_PRODUTOS];
     int numProdutos = 0;
 
@@ -60,6 +68,11 @@ int main()
 
     comprarProduto(produtos, numProdutos, nomeCompra, quantidadeCompra);
 
+
+	printf("-----------------------------------------\n");
+	printf("Fim!\n");
+	
     return 0;
 }
+
 

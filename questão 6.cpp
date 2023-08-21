@@ -1,5 +1,5 @@
-/* Questão 6 - Crie uma struct chamada "Estudante" com campos para nome, matrícula e notas em três disciplinas. Implemente funções para calcular a média das notas e 
-determinar se um aluno está aprovado (média maior ou igual a 7).*/
+/* QuestÃ£o 6 - Crie uma struct chamada "Estudante" com campos para nome, matrÃ­cula e notas em trÃªs disciplinas. Implemente funÃ§Ãµes para calcular a mÃ©dia das notas e 
+determinar se um aluno estÃ¡ aprovado (mÃ©dia maior ou igual a 7).*/
 #include <stdio.h>
 #include <string.h>
 
@@ -37,6 +37,14 @@ void verificarAprovacao(const Estudante *estudante)
 
 int main()
 {
+	printf("---------------------------------------------------\n");
+	printf("Universidade Catolica de Brasilia\n");
+	printf("Aluna: Izabelle Ferreira da silva\n");
+	printf("Turma: GPE02M0411 - Esrrutura de dados");
+	printf("\n-------------------------------------------------\n");
+	printf("Bem-vindos ao sistema integrado a boletim de aluno!\n");
+	printf("---------------------------------------------------\n");
+	
     Estudante aluno;
 
     printf("Digite o nome do aluno: ");
@@ -52,5 +60,9 @@ int main()
 
     verificarAprovacao(&aluno);
 
+
+	printf("-----------------------------------------\n");
+	printf("Fim!\n");
+	
     return 0;
 }

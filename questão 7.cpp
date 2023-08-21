@@ -1,5 +1,5 @@
-/* Questão 7 - Crie uma struct chamada "ContaBancaria" com campos para nome do titular, número da conta e saldo. 
-Implemente funções para depositar, sacar e verificar o saldo */
+/* QuestÃ£o 7 - Crie uma struct chamada "ContaBancaria" com campos para nome do titular, nÃºmero da conta e saldo. 
+Implemente funÃ§Ãµes para depositar, sacar e verificar o saldo */
 
 #include <stdio.h>
 #include <string.h>
@@ -36,7 +36,14 @@ void verificarSaldo(const ContaBancaria *conta)
 }
 
 int main()
-{
+{    printf("------------------------------------------------\n");
+	printf("Universidade Catolica de Brasilia\n");
+	printf("Aluna: Izabelle Ferreira da silva\n");
+	printf("Turma: GPE02M0411 - Esrrutura de dados");
+	printf("\n-----------------------------------------------\n");
+	printf("Bem-vindos ao sistema integrado ao banco digital!\n");
+	printf("-------------------------------------------------\n");
+	
     ContaBancaria conta;
     strcpy(conta.nomeTitular, "Joao");
     conta.numeroConta = 20487;
@@ -48,5 +55,9 @@ int main()
     sacar(&conta, 50.0);
     verificarSaldo(&conta);
 
+
+	printf("-----------------------------------------\n");
+	printf("Fim!\n");
+	
     return 0;
 }

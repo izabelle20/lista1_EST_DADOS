@@ -1,4 +1,4 @@
-/* Quest„o 5 - Crie uma struct chamada "Livro" com campos para tÌtulo, autor e ano de publicaÁ„o. Escreva um programa que permita ao usu·rio adicionar informaÁıes de livros, 
+/* Quest√£o 5 - Crie uma struct chamada "Livro" com campos para t√≠tulo, autor e ano de publica√ß√£o. Escreva um programa que permita ao usu√°rio adicionar informa√ß√µes de livros, 
 listar todos os livros cadastrados e buscar livros por autor */
 
 #include <stdio.h>
@@ -32,7 +32,7 @@ void adicionarLivro(Livro livros[], int *numLivros)
     }
     else
     {
-        printf("N„o e possivel adicionar mais livros. A lista esta cheia.\n");
+        printf("N√£o e possivel adicionar mais livros. A lista esta cheia.\n");
     }
 }
 
@@ -53,7 +53,7 @@ void buscarLivrosPorAutor(Livro livros[], int numLivros, const char *autor)
     {
         if (strcmp(livros[i].autor, autor) == 0)
         {
-            printf("Titulo: %s, Ano de PublicaÁ„o: %d\n", livros[i].titulo, livros[i].anoPublicacao);
+            printf("Titulo: %s, Ano de Publica√ß√£o: %d\n", livros[i].titulo, livros[i].anoPublicacao);
             encontrados = 1;
         }
     }
@@ -65,6 +65,15 @@ void buscarLivrosPorAutor(Livro livros[], int numLivros, const char *autor)
 
 int main()
 {
+	
+	printf("-----------------------------------------\n");
+	printf("Universidade Catolica de Brasilia\n");
+	printf("Aluna: Izabelle Ferreira da silva\n");
+	printf("Turma: GPE02M0411 - Esrrutura de dados");
+	printf("\n---------------------------------------\n");
+	printf("Bem-vindos ao sistema integrado a livros!\n");
+	printf("-----------------------------------------\n");
+	
     Livro livros[MAX_LIVROS];
     int numLivros = 0;
     int opcao;
@@ -99,10 +108,13 @@ int main()
                 printf("Saindo do programa.\n");
                 break;
             default:
-                printf("OpÁ„o invalida. Escolha uma opcao valida.\n");
+                printf("Op√ß√£o invalida. Escolha uma opcao valida.\n");
         }
     } while (opcao != 4);
 
+
+	printf("-----------------------------------------\n");
+	printf("Fim!\n");
+	
     return 0;
 }
-

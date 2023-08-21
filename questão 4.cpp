@@ -1,4 +1,4 @@
-/*Quest„o 4 - Crie uma struct chamada "Contato" que armazene o nome e o n˙mero de telefone de uma pessoa. escreva um programa que permita ao usu·rio adicionar contatos,
+/*Quest√£o 4 - Crie uma struct chamada "Contato" que armazene o nome e o n√∫mero de telefone de uma pessoa. escreva um programa que permita ao usu√°rio adicionar contatos,
 listar todos os contatos e buscar um contato pelo nome.*/
 
 #include <stdio.h>
@@ -63,6 +63,15 @@ void buscarContato(Contato contatos[], int numContatos, const char *nome)
 
 int main()
 {
+	
+	printf("----------------------------------------------------\n");
+	printf("Universidade Catolica de Brasilia\n");
+	printf("Aluna: Izabelle Ferreira da silva\n");
+	printf("Turma: GPE02M0411 - Esrrutura de dados");
+	printf("\n--------------------------------------------------\n");
+	printf("Bem-vindos ao sistema integrado a lista de contatos!\n");
+	printf("----------------------------------------------------\n");
+	
     Contato contatos[MAX_CONTATOS];
     int numContatos = 0;
     int opcao;
@@ -74,7 +83,7 @@ int main()
         printf("2 - Listar Contatos\n");
         printf("3 - Buscar Contato por Nome\n");
         printf("4 - Sair\n");
-        printf("Escolha uma opÁcao: ");
+        printf("Escolha uma op√ßcao: ");
         scanf("%d", &opcao);
 
         switch (opcao)
@@ -101,6 +110,9 @@ int main()
         }
     } while (opcao != 4);
 
+
+	printf("-----------------------------------------\n");
+	printf("Fim!\n");
+	
     return 0;
 }
-

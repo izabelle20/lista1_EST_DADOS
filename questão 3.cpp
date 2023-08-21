@@ -1,5 +1,5 @@
-/*Quest„o 3 - Crie uma struct chamada "Ponto" que represente um ponto no plano cartesiano com coordenadas x e y. Em seguida, implemente funÁıes para calcular a dist‚ncia entre 
-dois pontos e a inclinaÁ„o da reta que os conecta. */ 
+/*Quest√£o 3 - Crie uma struct chamada "Ponto" que represente um ponto no plano cartesiano com coordenadas x e y. Em seguida, implemente fun√ß√µes para calcular a dist√¢ncia entre 
+dois pontos e a inclina√ß√£o da reta que os conecta. */ 
 
 #include <stdio.h>
 #include <math.h>
@@ -26,6 +26,15 @@ float calcularInclinacao(Ponto p1, Ponto p2)
 
 int main()
 {
+	
+	printf("----------------------------------------------------\n");
+	printf("Universidade Catolica de Brasilia\n");
+	printf("Aluna: Izabelle Ferreira da silva\n");
+	printf("Turma: GPE02M0411 - Esrrutura de dados");
+	printf("\n--------------------------------------------------\n");
+	printf("Bem-vindos ao sistema integrado ao plano cartesiano!\n");
+	printf("----------------------------------------------------\n");
+	
     Ponto ponto1 = {7.5, 1.0};
     Ponto ponto2 = {10.8, 90.78};
 
@@ -45,5 +54,8 @@ int main()
         printf("Inclinacao da reta: %.2f\n", inclinacao);
     }
 
+
+	printf("-----------------------------------------\n");
+	printf("Fim!\n");
     return 0;
 }

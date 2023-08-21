@@ -1,5 +1,5 @@
-/* Questão 10 - Crie uma struct chamada "Moeda" que possa armazenar valores em dólares e euros. Escreva um programa 
-que permita ao usuário escolher uma moeda e converter um valor entre dólares e euros, usando a taxa de câmbio 
+/* QuestÃ£o 10 - Crie uma struct chamada "Moeda" que possa armazenar valores em dÃ³lares e euros. Escreva um programa 
+que permita ao usuÃ¡rio escolher uma moeda e converter um valor entre dÃ³lares e euros, usando a taxa de cÃ¢mbio 
 atual. */
 
 #include <stdio.h>
@@ -38,12 +38,20 @@ void converterEuroParaDolar(Moeda *moeda, float taxaEuroParaDolar)
 
 int main()
 {
+    printf("------------------------------------------------------\n");
+	printf("Universidade Catolica de Brasilia\n");
+	printf("Aluna: Izabelle Ferreira da silva\n");
+	printf("Turma: GPE02M0411 - Esrrutura de dados");
+	printf("\n----------------------------------------------------\n");
+	printf("Bem-vindos ao sistema integrado a conversor de moedas!\n");
+	printf("------------------------------------------------------\n");
+	
     Moeda moeda;
-    moeda.dolares = 100.0; // Valor inicial em dólares
+    moeda.dolares = 100.0; // Valor inicial em dÃ³lares
     moeda.euros = 0.0;    // Valor inicial em euros
 
-    float taxaDolarParaEuro = 5.40; // Taxa de câmbio atual
-    float taxaEuroParaDolar = 4.97; // Taxa de câmbio atual
+    float taxaDolarParaEuro = 5.40; // Taxa de cÃ¢mbio atual
+    float taxaEuroParaDolar = 4.97; // Taxa de cÃ¢mbio atual
 
     int opcao;
 
@@ -68,11 +76,15 @@ int main()
                 printf("Saindo do programa.\n");
                 break;
             default:
-                printf("Opção invalida. Escolha uma opcao valida.\n");
+                printf("OpÃ§Ã£o invalida. Escolha uma opcao valida.\n");
         }
     } while (opcao != 3);
 
     printf("Saldo final: %.2f dolares, %.2f euros\n", moeda.dolares, moeda.euros);
 
+
+	printf("-----------------------------------------\n");
+	printf("Fim!\n");
+	
     return 0;
 }

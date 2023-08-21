@@ -1,5 +1,5 @@
-/*Quest„o 9 - Crie uma struct chamada "Funcionario" com campos para nome, cargo, sal·rio e data de admiss„o. 
-Implemente funÁıes para dar um aumento de sal·rio e calcular quanto tempo um funcion·rio est· na empresa.*/
+/*Quest√£o 9 - Crie uma struct chamada "Funcionario" com campos para nome, cargo, sal√°rio e data de admiss√£o. 
+Implemente fun√ß√µes para dar um aumento de sal√°rio e calcular quanto tempo um funcion√°rio est√° na empresa.*/
 
 #include <stdio.h>
 #include <string.h>
@@ -30,12 +30,20 @@ double calcularTempoTrabalho(Funcionario *funcionario)
 
 int main()
 {
+	printf("--------------------------------------------------------\n");
+	printf("Universidade Catolica de Brasilia\n");
+	printf("Aluna: Izabelle Ferreira da silva\n");
+	printf("Turma: GPE02M0411 - Esrrutura de dados");
+	printf("\n------------------------------------------------------\n");
+	printf("Bem-vindos ao sistema integrado a ficha de funcionarios!\n");
+	printf("--------------------------------------------------------\n");
+	
     Funcionario funcionario;
     strcpy(funcionario.nome, "Joao");
     strcpy(funcionario.cargo, "Analista");
     funcionario.salario = 980.0;
 
-    // Definindo a data de admiss„o (por exemplo, 1∫ de janeiro de 2020)
+    // Definindo a data de admiss√£o (por exemplo, 1¬∫ de janeiro de 2020)
     funcionario.dataAdmissao.tm_year = 120; // 2020 - 1900
     funcionario.dataAdmissao.tm_mon = 0;    // Janeiro (0-11)
     funcionario.dataAdmissao.tm_mday = 1;   // Dia 1
@@ -48,6 +56,10 @@ int main()
     darAumento(&funcionario, 10.0);
     printf("Tempo de trabalho na empresa: %.2f anos\n", calcularTempoTrabalho(&funcionario));
 
+
+	printf("-----------------------------------------\n");
+	printf("Fim!\n");
+	
     return 0;
 }
 
